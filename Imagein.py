@@ -7,6 +7,9 @@ from PIL import Image
 
 from io import BytesIO
 bot=commands.bot(command_prefix="")
+@bot.command()
+async def youtried(ctx):
+        await ctx.send("https://tenor.com/view/youtried-clap-clapping-olivia-pope-kerry-washington-gif-5634718")
 
 @bot.command()
 
