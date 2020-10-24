@@ -1,2 +1,2 @@
-# imagein
-Imagein Bot
+# ImageIn
+An awesome discord bot
