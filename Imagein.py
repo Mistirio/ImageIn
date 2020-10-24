@@ -1,3 +1,4 @@
+
 import discord
 from discord.ext import commands
 import PIL
@@ -19,7 +20,7 @@ async def gun(ctx):
 
     pf=pfp.resize((500,500))
 
-    b=Image.open(".jpg/Gun.jpg")
+    b=Image.open("Gun.jpg")
 
     gu=b.resize((142,266))
 
@@ -35,7 +36,7 @@ async def gun(ctx):
 
 async def eat (ctx,*,user:discord.Member=None):
 
-      real=Image.open(".jpg/pp.jpg")
+      real=Image.open("pp.jpg")
 
       asp=ctx.author.avatar_url_as(size=128)
 
@@ -65,7 +66,7 @@ async def eat (ctx,*,user:discord.Member=None):
 
 async def slap (ctx,*,user:discord.Member=None):
 
-      real=Image.open(".jpg/pope.jpg")
+      real=Image.open("pope.jpg")
 
       asp=ctx.author.avatar_url_as(size=128)
 
@@ -129,7 +130,7 @@ async def really (ctx,*,user:discord.Member=None):
 
         
 
-      real=Image.open(".jpg/Real.jpg")
+      real=Image.open("Real.jpg")
 
       asp=ctx.author.avatar_url_as(size=128)
 
@@ -171,7 +172,7 @@ async def rip(ctx,*,user:discord.Member=None):
 
     if user==None:
 
-        real=Image.open(".jpg/Rip.png")
+        real=Image.open("Rip.png")
 
         asp=ctx.author.avatar_url_as(size=128)
 
@@ -217,7 +218,7 @@ async def wanted (ctx,*,user:discord.Member=None):
 
     if user==None:
 
-        real=Image.open(".jpg/wanted.jpg")
+        real=Image.open("wanted.jpg")
 
         asp=ctx.author.avatar_url_as(size=128)
 
