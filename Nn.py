@@ -17,12 +17,13 @@ async def on_ready():
 @bot.command()
 @commands.has_role("Owner")
 async def anounce(ctx,*,arg):
-    if ctx.guild.id==769200712247803936:
-        a=bot.get_channel(769842661628313610)
+    if ctx.guild.id==#your servers id:
+        a=bot.get_channel(#announcement channel id)
         await a.send(arg)
         return
     else:
-        await ctx.send("sorry but this command can only be used in my support server")
+         #code what you want your bot to do if the guild in which it was used is not your guild
+        
     
 
 @bot.command()
