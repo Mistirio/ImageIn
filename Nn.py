@@ -15,6 +15,17 @@ async def on_ready():
     await bot.change_presence(activity=discord.Game(name=f"Manipulating images in {str(len(bot.guilds))} servers|img!help "))
     return
 @bot.command()
+@commands.has_role("Owner")
+async def anounce(ctx,*,arg):
+    if ctx.guild.id==769200712247803936:
+        a=bot.get_channel(769842661628313610)
+        await a.send(arg)
+        return
+    else:
+        await ctx.send("sorry but this command can only be used in my support server")
+    
+
+@bot.command()
 async def help(ctx):
     a=discord.Embed(title="help",description="  youtried,eat,gun,really,rip,slap,wanted ",color=discord.Color.from_rgb(24,244,207))
     await ctx.send(embed=a)
