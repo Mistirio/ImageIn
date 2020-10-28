@@ -290,4 +290,4 @@ async def wanted (ctx,*,user:discord.Member=None):
 
     return
 
-bot.run("NzY5MjAyMzc4OTU1ODE2OTYx.X5Llig.GjK2UQc7Dk-mJ3c3Yp_MxzP7ac8")
+bot.run("bots token")
