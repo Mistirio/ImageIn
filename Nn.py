@@ -8,7 +8,7 @@ from PIL import Image,ImageDraw,ImageFont
 
 from io import BytesIO
 
-bot=commands.Bot(command_prefix=["img!"])
+bot=commands.Bot(command_prefix=["i!"])
 bot.remove_command("help")
 @bot.event
 async def on_ready():
@@ -28,9 +28,17 @@ async def anounce(ctx,*,arg):
 
 @bot.command()
 async def help(ctx):
-    a=discord.Embed(title="help",description="  youtried,eat,gun,really,rip,slap,wanted ",color=discord.Color.from_rgb(24,244,207))
-    await ctx.send(embed=a)
-@bot.command()
+    prefix = await bot.get_prefix(ctx)
+    embed = discord.Embed(title = 'ImageIn\'s Command\'s', description = f'Prefix: `{prefix}`\n\epic image manipulation bot')
+    embed.add_field(name="Image Commands", value=f"`{prefix}trash`, `{prefix}burn`, `{prefix}slap`, `{prefix}wanted`, `{prefix}rip`, `{prefix}gun`,`{prefix}youtried`,`{prefix}eat`,`{prefix}really`" ,inline=False)
+    embed.add_fielppp0pname="Moderation Commands", value=f"`{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`", inline=False)
+    embed.add_field(name="General Fun Commands", value=f"`{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`", inline=False)
+    embed.add_field(name="Welcome Commands", value=f"`{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`", inline=False)
+    embed.add_field(name="Setup Commands", value=f"`{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`, `{prefix}placeholder`", inline=False)
+    embed.add_field(name="Support Server", value=f"[`Click Here!`](https://discord.gg/hJ93yrh)", inline=True)
+    embed.add_field(name="Website", value=f"[`Click Here!`](https://imagein-bot.gq/)", inline=True)
+    embed.add_field(name="Hosting(free and payed)", value=f"[`Click Here!`](https://discord.gg/htUYhBn)", inline=True)
+    await ctx.send(embed=embed)@bot.command()
 async def youtried(ctx):
     await ctx.send(file=discord.File("tenor.gif"))
 
